@@ -1,0 +1,155 @@
+html,
+body {
+  font-family: roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #343a40; /* Dark gray for navbar */
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #f8f9fa; /* Light gray text for better readability */
+}
+
+.navbar .nav-link {
+  color: #f8f9fa;
+  font-size: 1rem;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* Sticky Navbar */
+.navbar.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("../images/lp.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 600px;
+  color: #f8f9fa; /* Light gray text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  image-rendering: auto;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #adb5bd; /* Light gray text for better readability */
+}
+
+/* Set uniform height for article images */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Features Cards */
+.features-icon {
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #212529; /* Dark gray for footer */
+  color: #f8f9fa; /* Light gray text for better readability */
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #adb5bd; /* Light gray links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+.footer h5 {
+  color: #f8f9fa; /* Light gray headers */
+  font-weight: bold;
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  color: #0080ff; /* Light gray social icons */
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+.footer-bottom {
+  background-color: #1a1d21; /* Darker gray for bottom footer */
+  padding: 10px 0;
+  text-align: center;
+  color: #adb5bd; /* Light gray text */
+  margin-top: 20px;
+}
